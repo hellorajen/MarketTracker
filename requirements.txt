@@ -1,0 +1,5 @@
+yfinance>=0.2.38
+reportlab>=4.1.0
+holidays>=0.45
+pandas>=2.0.0
+requests>=2.31.0
