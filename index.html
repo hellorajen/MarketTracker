@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetGanesh | Global Macro & Multi-Asset Investor Matrix</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .brand img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-color);
+        }
+
+        .brand h1 {
+            font-size: 1.25rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .brand span {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: #0f172a;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        main {
+            flex: 1;
+            max-width: 1200px;
+            width: 95%;
+            margin: 2rem auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .viewer-container {
+            flex: 1;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        iframe {
+            width: 100%;
+            height: 85vh;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            background-color: var(--card-bg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <!-- Replace 'logo.png' with your actual image filename or URL -->
+            <img src="logo.png" alt="NetGanesh Logo" onerror="this.style.display='none'">
+            <div>
+                <h1>NetGanesh Global Macro Matrix</h1>
+                <span>Automated Nightly Investor Dashboard</span>
+            </div>
+        </div>
+        <div class="actions">
+            <a href="NetGanesh_Global_Macro_Matrix_2026.pdf" download class="btn btn-outline">Download PDF</a>
+            <a href="NetGanesh_Global_Macro_Matrix_2026.pdf" target="_blank" class="btn">Open Fullscreen</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="viewer-container">
+            <!-- Embeds the PDF natively in the browser -->
+            <iframe src="NetGanesh_Global_Macro_Matrix_2026.pdf" title="Macro Matrix PDF Viewer"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        Curated & Published by NetGanesh Publishing (Toronto, Ontario) • Automated Daily Market Analytics
+    </footer>
+
+</body>
+
+</html>
