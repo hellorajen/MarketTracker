@@ -5,7 +5,8 @@ on:
     # Runs every day at 22:00 UTC (after markets close)
     - cron: '0 22 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
-
+permissions:
+  contents: write # 👈 Required so the bot can push the updated PDF back to the repo
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
