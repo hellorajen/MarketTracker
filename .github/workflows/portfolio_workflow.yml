@@ -1,4 +1,4 @@
-name: Generate and Publish Macro Matrix PDF
+name: Generate and Publish Portfolio Matrix PDF
 
 on:
   schedule:
